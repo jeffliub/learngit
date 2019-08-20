@@ -17,3 +17,6 @@ tmall.com
 
 Netflix:
 99kc3eg9@gmail.com=123123
+
+    let username = typeof(handlerInput.requestEnvelope.request.intent.slots.name.value) =='undefined' ?'':handlerInput.requestEnvelope.request.intent.slots.name.value;
+    const speechOutput = "Hello "+ username +", you did a good job! It is "+ handlerInput.requestEnvelope.request.timestamp;
